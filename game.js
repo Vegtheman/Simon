@@ -2,7 +2,7 @@ let buttonColors = ["red", "blue", "green", "yellow"];
 let gamePattern = [];
 let userClickedPattern = [];
 let level = 0;
-let start= false;
+let start = false;
 
 $(".btn").click(function() {
 
@@ -35,9 +35,9 @@ function animatePress(currentColor) {
   }, 100);
 }
 
-$(document).on("keypress", function () {
+$(document).on("keypress", function() {
 
-$("#level-title").text("Level " + level);
-nextSequence()
-start = true;
+  $("#level-title").text("Level " + level);
+  nextSequence()
+  start = true;
 });
